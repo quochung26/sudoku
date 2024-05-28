@@ -1,0 +1,140 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.difficult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.difficult label {
+  font-weight: 600;
+}
+
+.difficult .btn:hover, .difficult .btn:focus {
+  border-color: #d3d3d3;
+  background-color: #d3d3d3;
+  outline: none;
+}
+
+.difficult .selected {
+  background-color: #d3d3d3;
+}
+
+.squares {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  max-width: 540px;
+  width: 100%;
+  margin: auto;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions button {
+  border: 1px solid #d3d3d3;
+}
+
+.actions button:hover {
+  background-color: #d3d3d3;
+}
+
+.row-selected, .col-selected, .box-selected {
+  background-color: #CAF4FF;
+}
+
+.square:hover, .selected {
+  background-color: #A0DEFF;
+}
+
+.correct {
+  color: #5AB2FF;
+}
+
+.same {
+  background-color: #A0DEFF;
+}
+
+.wrong, .wrong:hover {
+  background-color: #ffd0e2;
+  color: #FA7070;
+}
+
+.same-wrong, .same-wrong:hover {
+  background-color: #ffd0e2;
+}
+
+.three-col {
+  border-right: 2px solid #000000;
+}
+
+.three-row {
+  border-bottom: 2px solid #000000;
+}
+
+.numbers {
+  max-width: 540px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: none;
+  font-weight: 600;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: #A0DEFF;
+}
+
+.number:first-child {
+  border-left: 2px solid #000000;
+}
+
+.number:last-child {
+  border-right: 2px solid #000000;
+}
